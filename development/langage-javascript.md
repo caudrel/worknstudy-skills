@@ -1,5 +1,7 @@
 # Langage Javascript
 
+test
+
 > ❌ A travailler
 
 > ✔️ Auto validation par l'étudiant
@@ -60,4 +62,3 @@ Résolution :
 
 - J'ai ecrit un [tutoriel](...) ❌ / ✔️
 - J'ai fait une [présentation](...) ❌ / ✔️
-
