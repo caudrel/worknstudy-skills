@@ -1,7 +1,5 @@
 # Langage Javascript
 
-test
-
 > ❌ A travailler
 
 > ✔️ Auto validation par l'étudiant
