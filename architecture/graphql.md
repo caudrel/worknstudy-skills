@@ -6,7 +6,7 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- la différence entre REST et GraphQL ✔️
+- la différence entre REST et GraphQL ✔️ <br/>
   Avec une API REST, on défini plusieurs points d'entrées vers notre API en utilisant les méthodes HTTP et qui contraint l'utilisateur à utiliser ces routes.
   Avec une API codé avec GraphQL, nous n'avons plus qu'un seul point d'entrée et l'on va se servire d'Apollo serveur pour récupérer notre donnée grace à nos résolvers par entité qui va définir le schéma de notre donnée.
 - les besoins auxquels répond GraphQL ✔️
