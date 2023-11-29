@@ -6,20 +6,26 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-###- la différence entre REST et GraphQL ✔️ <br/>
-Avec une API REST, on défini plusieurs points d'entrées vers notre API en utilisant les méthodes HTTP et qui contraint l'utilisateur à utiliser ces routes.
-Avec une API codé avec GraphQL, nous n'avons plus qu'un seul point d'entrée et l'on va se servire d'Apollo serveur pour récupérer notre donnée grace à nos résolvers par entité qui va définir le schéma de notre donnée.
-
+- la différence entre REST et GraphQL ✔️ <br/>
+  Avec une API REST, on défini plusieurs points d'entrées vers notre API en utilisant les méthodes/verbes HTTP.
+  Avec une API GraphQL, nous n'avons plus qu'un seul point d'entrée et l'on va se servir d'Apollo serveur qui sera relié à nos resolvers faire appel à des query ou des mutations pour récupérer un morceau de donnée précise ou agir sur notre base de données
+  <br/>
 - les besoins auxquels répond GraphQL ✔️ <br/>
-  Grâce à GraphQL on répond aux contrainte d'overfetching de données en précisant exactement pour chaque besoin quelle donné l'on souhaite récupérer.
+  Grâce à GraphQL nous permet de faire du "exact" fetching on répond à la contrainte d'overfetching de données en REST en précisant exactement pour chaque besoin quelle donnée l'on souhaite récupérer.
   Avec REST c'est beaucoup moins flexible
+  <br/>
 - la définition d'un schéma ✔️ <br/>
   Un schéma ...
+  <br/>
 - Query ✔️ <br/>
-  Une query, qui est codé dans un résolver d'une entité, permet de coder un script qui défini quelle donnée on veut récupérer (GET)
+  Une query, qui peut être codée dans un resolver lié à une entité, défini quelle donnée on veut lire (GET)
+  <br/>
 - Mutation ✔️ <br/>
-  Une mutation, également codé dans un resolver d'un entité, permet de modifier, créer ou suprimer de la donnée (DELETE, POST, PUT pour tout remplacer d'un tuple, PATCH pour cibler un attribut d'un tupple )
-- Subscription ❌ / ✔️
+  Une mutation, permet de modifier, créer ou suprimer de la donnée (DELETE, POST, PUT pour tout remplacer d'un tuple, PATCH pour cibler un attribut d'un tupple )
+  <br/>
+- Subscription ✔️<br/>
+  Pour recevoir des notifications en temps réel
+  <br/>
 
 ## 💻 J'utilise
 
