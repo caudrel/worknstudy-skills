@@ -7,23 +7,24 @@
 ## 🎓 J'ai compris et je peux expliquer
 
 - la différence entre REST et GraphQL ✔️ <br/>
-  Avec une API REST, on défini plusieurs points d'entrées vers notre API en utilisant les méthodes/verbes HTTP.
-  Avec une API GraphQL, nous n'avons plus qu'un seul point d'entrée et l'on va se servir d'Apollo serveur qui sera relié à nos resolvers faire appel à des query ou des mutations pour récupérer un morceau de donnée précise ou agir sur notre base de données
+  Avec une API REST, on défini plusieurs points d'entrées vers notre API en utilisant les méthodes/verbes HTTP.<br/>
+  Avec une API GraphQL, nous n'avons plus qu'un seul point d'entrée intelligent (POST /graphql) et l'on va se servir du client d'Apollo pour faire notre demande parmis les méthodes proposées par Apollo serveur. Celui-ci se sert de nos resolverspour faire appel à des query ou des mutations pour récupérer un morceau de donnée précise ou agir sur notre base de données.<br />
+  Pas de typage en REST, on ne peux pas connaître en avance les données reçues.
   <br/>
 - les besoins auxquels répond GraphQL ✔️ <br/>
-  Grâce à GraphQL nous permet de faire du "exact" fetching on répond à la contrainte d'overfetching de données en REST en précisant exactement pour chaque besoin quelle donnée l'on souhaite récupérer.
+  GraphQL est un langage de requêtage fortement typé. GraphQL nous permet de faire du "exact" fetching on répond à la contrainte d'overfetching de données en REST en précisant exactement pour chaque besoin quelle donnée l'on souhaite récupérer.
   Avec REST c'est beaucoup moins flexible
   <br/>
 - la définition d'un schéma ✔️ <br/>
-  Un schéma ...
+  Un schéma GraphQL défini le type de notre donnée/entités. On utilisera TypeGraphQL pour nous générer automatiquement un shéma à partir de nos types en TypeScript
   <br/>
 - Query ✔️ <br/>
-  Une query, qui peut être codée dans un resolver lié à une entité, défini quelle donnée on veut lire (GET)
+  Une query (requête), qui est souvent codée dans un resolver lié à une entité, défini quelle donnée on veut lire. Les Query, Mutations et Subscriptions sont un peut comme des contrôleurs.
   <br/>
 - Mutation ✔️ <br/>
-  Une mutation, permet de modifier, créer ou suprimer de la donnée (DELETE, POST, PUT pour tout remplacer d'un tuple, PATCH pour cibler un attribut d'un tupple )
+  Une mutation (requête), permet de modifier, créer ou suprimer de la donnée
   <br/>
-- Subscription ✔️<br/>
+- Subscription ❌ <br/>
   Pour recevoir des notifications en temps réel
   <br/>
 
