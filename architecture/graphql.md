@@ -8,20 +8,25 @@
 
 - la différence entre REST et GraphQL ✔️ <br/>
   Avec une API REST, on défini plusieurs points d'entrées vers notre API en utilisant les méthodes/verbes HTTP.<br/>
-  Avec une API GraphQL, nous n'avons plus qu'un seul point d'entrée intelligent (POST /graphql) et l'on va se servir du client d'Apollo pour faire notre demande parmis les méthodes proposées par Apollo serveur. Celui-ci se sert de nos resolverspour faire appel à des query ou des mutations pour récupérer un morceau de donnée précise ou agir sur notre base de données.<br />
+  Avec une API GraphQL, nous n'avons plus qu'un seul point d'entrée intelligent (POST /graphql) et l'on va se servir du client d'Apollo pour faire notre demande parmis les méthodes proposées par Apollo serveur. Celui-ci se sert de nos resolverspour faire appel à des query ou des mutations pour récupérer un morceau de donnée précise ou agir sur notre base de données.
+  <br />
   Pas de typage en REST, on ne peux pas connaître en avance les données reçues.
   <br/>
 - les besoins auxquels répond GraphQL ✔️ <br/>
   GraphQL est un langage de requêtage fortement typé. GraphQL nous permet de faire du "exact" fetching on répond à la contrainte d'overfetching de données en REST en précisant exactement pour chaque besoin quelle donnée l'on souhaite récupérer.
   <br/>
 - la définition d'un schéma ✔️ <br/>
-  C'est la description des data auxquelles le client peut accéder via l'API GraphQL. Par exemple le schema d'une entité Book :  <br/>
-  type Book {
-  title: String
-  author: Author
-  }
+  C'est la description des data auxquelles le client peut accéder via l'API GraphQL. Par exemple le schema d'une entité RecentAd : <br/>
+  ```
+  export type RecentAd = {
+  id: number;
+  title: string;
+  price: number;
+  picture: string;
+  };
+  ```
 - Query ✔️ <br/>
-  C'est une requête qui permet de récupérer des données sans les modifier (équivalent GET en API REST)  <br/>
+  C'est une requête qui permet de récupérer des données sans les modifier (équivalent GET en API REST) <br/>
 - Mutation ✔️ <br/>
   C'est une requête qui permet de modifier des données (équivalent à du PUT, PATCH, DELETE, POST d'une API REST)
   <br/>
