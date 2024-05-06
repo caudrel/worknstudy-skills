@@ -40,7 +40,7 @@
 ### Un exemple personnel commenté ✔️
 
 <br />
-Exemple backend: envoi d'une annonce (ad) <br />
+####Exemple backend: envoi d'une annonce (ad) <br />
 1. Récuparétion de l'id de l'ad en argument, en s'assurant que c'est bien un integer<br/>
 2. Trouver l'annonce correspondante avec la méthode findOne()<br/>
 3. On appelle les relations associées<br/>
@@ -72,7 +72,7 @@ export default AdsResolver
 ```
 
 <br />
-Exemple frontend avec Codegen : récupération d'une annonce (ad)<br /><br />
+####Exemple frontend avec Codegen : récupération d'une annonce (ad)<br /><br />
 1. Import du code généré par Codegen<br />
 2. Typage du format de l'annonce que l'on va récupérer (AdDetail)<br />
 3. Montage de la data grace au code généré -> useGetAdByIdQuery() en lui passant la variable id récupérée dans la route grâce au router.query<br />
@@ -105,7 +105,7 @@ return (
 )
 ```
 
-Code généré par codegen sous frontend/src/gql/generated
+####Code généré par codegen sous frontend/src/gql/generated
 
 ```
 export type GetAdByIdQueryVariables = Exact<{
