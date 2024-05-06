@@ -37,10 +37,15 @@
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ❌ / ✔️
+### Un exemple personnel commenté ✔️
 
 <br />
-Exemple backend <br />
+Exemple backend: envoi d'une annonce (ad) <br />
+1. Récuparétion de l'id de l'ad en argument, en s'assurant que c'est bien un integer<br/>
+2. Trouver l'annonce correspondante avec la méthode findOne()<br/>
+3. On appelle les relations associées<br/>
+4. Gestion des erreurs avec l'objet GraphQLError<br/>
+5. Retour de l'annonce<br/>
 <br />
 
 ```
@@ -67,7 +72,12 @@ export default AdsResolver
 ```
 
 <br />
-Exemple frontend avec Codegen <br />
+Exemple frontend avec Codegen : récupération d'une annonce (ad)<br /><br />
+1. Import du code généré par Codegen<br />
+2. Typage du format de l'annonce que l'on va récupérer (AdDetail)<br />
+3. Montage de la data grace au code généré -> useGetAdByIdQuery() en lui passant la variable id récupérée dans la route grâce au router.query<br />
+4. gestion des erreurs avec "skip"<br />
+5. Récupération de la donnée via getAdById appliqué sur l'objet data<br />
 <br />
 
 ```
@@ -112,9 +122,9 @@ return Apollo.useQuery<GetAdByIdQuery, GetAdByIdQueryVariables>(GetAdByIdDocumen
 
 ### Utilisation dans un projet ❌ / ✔️
 
-[lien github](...)
+[https://github.com/caudrel/the-good-corner](...)
 
-Description :
+Description : Application de petites annonces, fil rouge lors de notre alternance en cours.
 
 ### Utilisation en production si applicable❌ / ✔️
 
