@@ -42,7 +42,8 @@
 <br />
 Exemple backend <br />
 <br />
-``
+
+```
 import { Resolver, Query, Arg, Int } from "type-graphql"
 import { Ad } from "../entities/ad"
 import { GraphQLError } from "graphql"
@@ -63,8 +64,8 @@ return ad;
 }
 
 export default AdsResolver
+```
 
-``
 <br />
 Exemple frontend avec Codegen <br />
 <br />
