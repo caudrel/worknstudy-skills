@@ -42,7 +42,7 @@
 <br />
 Exemple backend <br />
 <br />
-```
+``
 import { Resolver, Query, Arg, Int } from "type-graphql"
 import { Ad } from "../entities/ad"
 import { GraphQLError } from "graphql"
@@ -64,12 +64,12 @@ return ad;
 
 export default AdsResolver
 
-```
+``
 <br />
 Exemple frontend avec Codegen <br />
 <br />
-```
 
+```
 import { useGetAdByIdQuery } from "@/graphql/generated/schema";
 
 export type AdDetail = {
@@ -92,12 +92,11 @@ const ad = data?.getAdById;
 return (
 ...
 )
-
 ```
 
 Code généré par codegen sous frontend/src/gql/generated
-```
 
+```
 export type GetAdByIdQueryVariables = Exact<{
 adId: Scalars['Int'];
 }>;
@@ -108,10 +107,7 @@ export function useGetAdByIdQuery(baseOptions: Apollo.QueryHookOptions<GetAdById
 const options = {...defaultOptions, ...baseOptions}
 return Apollo.useQuery<GetAdByIdQuery, GetAdByIdQueryVariables>(GetAdByIdDocument, options);
 }
-
 ```
-
-
 
 ### Utilisation dans un projet ❌ / ✔️
 
@@ -154,6 +150,8 @@ Résolution :
 
 - J'ai ecrit un [tutoriel](...) ❌ / ✔️
 - J'ai fait une [présentation](...) ❌ / ✔️
+
+```
 
 ```
 
