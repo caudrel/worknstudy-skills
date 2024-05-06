@@ -128,7 +128,7 @@ return Apollo.useQuery<GetAdByIdQuery, GetAdByIdQueryVariables>(GetAdByIdDocumen
 }
 ```
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation dans un projet ✔️
 
 [https://github.com/caudrel/the-good-corner](...)
 
@@ -146,10 +146,15 @@ Description :
 
 ## 🌐 J'utilise des ressources
 
-### Titre
+### GraphQl doc
 
-- lien
-- description
+- [https://graphql.org/learn/](...)
+- Documentation officielle de GraphQL
+
+### Apollo doc
+
+- [https://www.apollographql.com/docs/](...)
+- Documentation officielle d'Appollo
 
 ## 🚧 Je franchis les obstacles
 
