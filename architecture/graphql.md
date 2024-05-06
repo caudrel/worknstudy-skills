@@ -42,14 +42,14 @@
 <br />
 
 **Exemple backend: envoi d'une annonce (ad)**
-
 <br />
+
 1. Récuparétion de l'id de l'ad en argument, en s'assurant que c'est bien un integer<br/>
 2. Trouver l'annonce correspondante avec la méthode findOne()<br/>
 3. On appelle les relations associées<br/>
 4. Gestion des erreurs avec l'objet GraphQLError<br/>
 5. Retour de l'annonce<br/>
-<br />
+   <br />
 
 ```
 import { Resolver, Query, Arg, Int } from "type-graphql"
@@ -77,8 +77,7 @@ export default AdsResolver
 <br />
 
 **Exemple frontend avec Codegen : récupération d'une annonce (ad)**
-
-<br /><br />
+<br />
 
 1. Import du code généré par Codegen<br />
 2. Typage du format de l'annonce que l'on va récupérer (AdDetail)<br />
