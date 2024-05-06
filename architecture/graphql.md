@@ -154,7 +154,7 @@ Description :
 ### Apollo doc
 
 - [https://www.apollographql.com/docs/](...)
-- Documentation officielle d'Appollo
+- Documentation officielle d'Apollo
 
 ## 🚧 Je franchis les obstacles
 
