@@ -13,16 +13,17 @@
   <br/>
 - les besoins auxquels répond GraphQL ✔️ <br/>
   GraphQL est un langage de requêtage fortement typé. GraphQL nous permet de faire du "exact" fetching on répond à la contrainte d'overfetching de données en REST en précisant exactement pour chaque besoin quelle donnée l'on souhaite récupérer.
-  Avec REST c'est beaucoup moins flexible
   <br/>
 - la définition d'un schéma ✔️ <br/>
-  Un schéma GraphQL défini le type de notre donnée/entités. On utilisera TypeGraphQL pour nous générer automatiquement un shéma à partir de nos types en TypeScript
-  <br/>
+  C'est la description des data auxquelles le client peut accéder via l'API GraphQL. Par exemple le schema d'une entité Book :  <br/>
+  type Book {
+  title: String
+  author: Author
+  }
 - Query ✔️ <br/>
-  Une query (requête), qui est souvent codée dans un resolver lié à une entité, défini quelle donnée on veut lire. Les Query, Mutations et Subscriptions sont un peut comme des contrôleurs.
-  <br/>
+  C'est une requête qui permet de récupérer des données sans les modifier (équivalent GET en API REST)  <br/>
 - Mutation ✔️ <br/>
-  Une mutation (requête), permet de modifier, créer ou suprimer de la donnée
+  C'est une requête qui permet de modifier des données (équivalent à du PUT, PATCH, DELETE, POST d'une API REST)
   <br/>
 - Subscription ❌ <br/>
   Pour recevoir des notifications en temps réel
